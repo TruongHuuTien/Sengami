@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "Sengami",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,5 +9,12 @@
     "express": "3.4.8",
     "ejs": "*",
     "less-middleware": "*"
+  },
+  "domains": [
+    "sengami.com"
+  ],
+  "subdomain": "tien.truong-sengami",
+  "engines": {
+    "node": "0.10.x"
   }
 }
