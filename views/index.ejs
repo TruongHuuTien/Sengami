@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title><%= title %></title>
 	<link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
@@ -8,5 +9,19 @@
 	<header id="header">
 		<h1 id="project-title">Sengami</h1>
 	</header>
+	<div id="login-window" class="window medium almond">
+		<header><h3>Connexion</h3></header>
+		<div class="content">
+			<p>Formulaire de connexion.<br />Veuillez entrer vos informations pour acc&eacute;der &agrave; Sengami</p>
+			<div class="input-box">
+				<label for="login-mail">email:</label>
+				<input type="text" id="login-mail" placeholder="adresse email" />
+			</div>
+			<div class="input-box">
+				<label for="login-password">mot de passe:</label>
+				<input type="text" id="login-password" placeholder="mot de passe" />
+			</div>
+		</div>
+	</div>
 </body>
 </html>
