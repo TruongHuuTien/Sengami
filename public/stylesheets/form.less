@@ -4,7 +4,6 @@
 		display: inline-block;
 		width: 100%; margin-bottom: 4px;
 		text-transform: capitalize;
-		color: @choco;
 	}
 	input {
 		display: inline-block;
@@ -14,5 +13,19 @@
 		box-sizing: border-box;
 		border-radius: 4px;
 		border: 0px;
+	}
+}
+
+button.button {
+	-webkit-appearance: none;
+	border: none;
+	height: 28px;
+	&.latte {
+		background-color: @leef;
+		color: @sand;
+	}
+	
+	&.medium {
+		width: 160px;
 	}
 }
