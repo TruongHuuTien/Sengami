@@ -10,7 +10,7 @@
   display: inline-block;
   width: 100%;
   margin-bottom: 4px;
-  padding-left: 4px;
+  padding-left: 3px;
   text-transform: capitalize;
 }
 .input-box input {
@@ -49,6 +49,7 @@ button.button.medium {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 2000;
 }
 .window > header {
   width: 100%;
@@ -96,7 +97,7 @@ header#header {
   height: 28px;
   background-color: #5e3929;
   box-shadow: 0px 1px 2px #cd8c52;
-  z-index: 10000;
+  z-index: 1000;
 }
 header#header #project-title {
   font: 18px "Helvetica Neue UltraLight", "Helvetica Neue" Helvetica, Arial, sans-serif;
@@ -113,7 +114,8 @@ header#header #project-title {
   height: 200px;
   background-color: #dee8be;
   background-image: url('/images/banner.png');
-  z-index: 5000;
+  background-position: center top;
+  z-index: 500;
 }
 #banner #menu {
   position: absolute;
