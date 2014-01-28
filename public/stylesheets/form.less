@@ -20,12 +20,19 @@ button.button {
 	-webkit-appearance: none;
 	border: none;
 	height: 28px;
-	&.latte {
-		background-color: @leef;
-		color: @sand;
+	cursor: pointer;
+	&.macha {
+		.macha-leef();
+	}
+	&.cafe {
+		background-color: @cafe;
+		color: @paper;
+	}
+	&:hover {
+		box-shadow: 0px 0px 1px @choco;
 	}
 	
 	&.medium {
-		width: 160px;
+		width: 120px;
 	}
 }

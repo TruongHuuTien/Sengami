@@ -1,14 +1,19 @@
-@choco: #5E3929;
-@latte: #CD8C52;
-@macha: #B7D1A3;
-@pistache: #DEE8BE;
-@paper: #FCF7D3;
+@choco:		#5E3929;
+@cafe:		#CD8C52;
+@macha:		#B7D1A3;
+@pistache:	#DEE8BE;
+@paper:		#FCF7D3;
 
-@white: #FFFFFF;
-@black: #000000;
+@white:		#FFFFFF;
+@black:		#000000;
 
-@leef: darken(@macha, 16%);
-@sand: darken(@paper, 6%);
-@macchiato: lighten(@latte, 8%);
 
-@dark-macha: darken(@macha, 50%);
+@latte:		lighten(@cafe, 20%); // Text-color, use with @choco bg
+@mint:		lighten(@pistache, 10%); // Clear BG
+@leef:		darken(@macha, 50%); //dark text-color, use with @macha bg
+
+.macha-leef {
+	background-color: @macha;
+	color: @leef;
+	border-color: @leef;
+}

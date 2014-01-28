@@ -1,3 +1,8 @@
+.macha-leef {
+  background-color: #b7d1a3;
+  color: #384e27;
+  border-color: #384e27;
+}
 .input-box {
   margin: 20px 0px;
 }
@@ -21,15 +26,25 @@ button.button {
   -webkit-appearance: none;
   border: none;
   height: 28px;
+  cursor: pointer;
 }
-button.button.latte {
-  background-color: #8cb66d;
-  color: #faf2b6;
+button.button.macha {
+  background-color: #b7d1a3;
+  color: #384e27;
+  border-color: #384e27;
+}
+button.button.cafe {
+  background-color: #cd8c52;
+  color: #fcf7d3;
+}
+button.button:hover {
+  box-shadow: 0px 0px 1px #5e3929;
 }
 button.button.medium {
-  width: 160px;
+  width: 120px;
 }
 .window {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,19 +70,18 @@ button.button.medium {
   margin-left: -200px;
   margin-top: -160px;
 }
-.window.pistache {
-  background-color: #dee8be;
+.window.mint {
+  background-color: #f1f5e4;
   border-width: 2px 2px 2px;
-  border-color: #8cb66d;
+  border-color: #b7d1a3;
   border-style: solid;
-  box-shadow: 1px 1px 2px #8cb66d;
+  box-shadow: 1px 1px 2px #dee8be;
+  color: ;
+}
+.window.mint > header {
+  background-color: #b7d1a3;
   color: #384e27;
-}
-.window.pistache > header {
-  background-color: #8cb66d;
-}
-.window.pistache > header h3 {
-  color: #faf2b6;
+  border-color: #384e27;
 }
 .window .right {
   float: right;
@@ -81,12 +95,35 @@ header#header {
   height: 28px;
   background-color: #5e3929;
   box-shadow: 0px 1px 2px #cd8c52;
+  z-index: 10000;
 }
 header#header #project-title {
   font: 18px "Helvetica Neue UltraLight", "Helvetica Neue" Helvetica, Arial, sans-serif;
   font-weight: lighter;
   margin: 3px 20px;
-  color: #d6a172;
+  color: #e4c1a1;
+}
+#banner {
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 200px;
+  background-color: #dee8be;
+  z-index: 5000;
+}
+#banner #menu {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 640px;
+  height: 28px;
+  margin-left: -320px;
+}
+#banner #menu .button {
+  margin-right: 2px;
+  float: left;
 }
 body {
   position: absolute;
