@@ -3,10 +3,18 @@ header#header {
 	top: 0px; left: 0px; right: 0px;
 	width: 100%; height: @header-height;
 	background-color: @choco;
-	box-shadow: 0px 1px 2px @cafe;
+	box-shadow: 0px 1px 4px @cafe;
 	z-index: 1000;
 	#project-title {
 		font: 18px "Helvetica Neue UltraLight","Helvetica Neue" Helvetica, Arial, sans-serif;
 		font-weight: lighter; margin: 3px 20px; color: @latte;
+		#project-version {
+			display: inline-block;
+			margin-left: 20px;
+			font-size: 9px;
+			&:before {
+				content: "Version: "
+			}
+		}
 	}
 }

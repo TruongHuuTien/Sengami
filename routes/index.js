@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Sengami' });
+  res.render('index', { title: 'Sengami', version: "0.0.3" });
 };

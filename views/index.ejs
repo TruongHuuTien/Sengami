@@ -7,6 +7,7 @@
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script>
 		$(document).ready(function() {
+			$('#login-window').hide();
 			$('#login-window-trigger').click(function() {
 				$('#login-window').fadeIn();
 			});
@@ -18,7 +19,7 @@
 </head>
 <body>
 	<header id="header">
-		<h1 id="project-title">Sengami</h1>
+		<h1 id="project-title">Sengami<span id="project-version"><%= version %></span></h1>
 	</header>
 	<div id="banner">
 		<div id="menu">
@@ -34,25 +35,27 @@
 		
 		</div>
 	</div>
-	<div id="login-window" class="window medium mint">
-		<header><h3>Connexion</h3></header>
-		<div class="content">
-			<p>Formulaire de connexion.<br />Veuillez entrer vos informations pour acc&eacute;der &agrave; Sengami</p>
-			<div class="input-box">
-				<label for="login-mail">Adresse email:</label>
-				<input type="text" id="login-mail" placeholder="Adresse email" />
-			</div>
-			<div class="input-box">
-				<label for="login-password">Mot de passe:</label>
-				<input type="password" id="login-password" placeholder="Mot de passe" />
-			</div>
-			<div class="right" style="margin-top: 18px;">
-				<button id="login-window-close" class="button medium macha">
-					Fermer
-				</button>
-				<button class="button medium cafe">
-					Se Connecter
-				</button>
+	<div id="login-window" class="window-wrapper">
+		<div class="window medium mint">
+			<header><h3>Connexion</h3></header>
+			<div class="content">
+				<p>Formulaire de connexion.<br />Veuillez entrer vos informations pour acc&eacute;der &agrave; Sengami</p>
+				<div class="input-box">
+					<label for="login-mail">Adresse email:</label>
+					<input type="text" id="login-mail" placeholder="Adresse email" />
+				</div>
+				<div class="input-box">
+					<label for="login-password">Mot de passe:</label>
+					<input type="password" id="login-password" placeholder="Mot de passe" />
+				</div>
+				<div class="right" style="margin-top: 18px;">
+					<button id="login-window-close" class="button medium macha">
+						Fermer
+					</button>
+					<button class="button medium cafe">
+						Se Connecter
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>
