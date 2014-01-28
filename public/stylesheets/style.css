@@ -148,6 +148,14 @@ header#header #project-title #project-version:before {
   margin-right: 2px;
   float: left;
 }
+#content {
+  position: absolute;
+  top: 228px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 20px;
+}
 body {
   position: absolute;
   top: 0;
