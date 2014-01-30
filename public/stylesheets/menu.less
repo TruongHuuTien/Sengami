@@ -1,0 +1,31 @@
+#menu {
+	position: absolute;
+	bottom: 0px; left: 0px; right: 0px;
+	height: @menu-height;
+	background-color: @black;
+	.left {
+		position: absolute;
+		left: 0px;
+		width: 280px; height: 100%;
+		background-color: red;
+	}
+	.center {
+		position: absolute;
+		left: 50%; margin-left: -96px;
+		width: 192px; height: 100%;
+		.kami-selector {
+			display: block;
+			float: left;
+			width: 40px;
+			height: 40px;
+			background-color: green;
+			margin: 4px 4px;
+		}
+	}
+	.right {
+		position: absolute;
+		right: 0px;
+		width: 280px; height: 100%;
+		background-color: blue;
+	}
+}
