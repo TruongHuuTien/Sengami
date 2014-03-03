@@ -4,7 +4,7 @@
  */
 var app = {
 	title	: "Sengami",
-	version	: "0.0.5"	
+	version	: "0.0.6"	
 };
 
 exports.index = function(req, res){
