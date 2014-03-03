@@ -1,9 +1,10 @@
 #banner {
+	@banner-color: @pumpkin;
 	position: absolute;
 	top: @header-height; left: 0px; right: 0px;
 	width: 100%; height: @banner-height;
-	background-color: @pistache;
-	background-image: url('/images/banner.png');
+	background-color: @banner-color;
+	//background-image: url('/images/banner.png');
 	background-position: center top;
 	z-index: 500;
 	#nav {
@@ -12,7 +13,7 @@
 		width: 640px; height: 28px;
 		padding: 4px 4px 0px;
 		margin-left: -324px;
-		background-color: @pistache;
+		background-color: @banner-color;
 		.button {
 			margin-right: 2px;
 			float: left;
